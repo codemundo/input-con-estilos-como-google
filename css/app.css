@@ -41,8 +41,31 @@
     width: 100%;
 }
 
-.field:focus {
+:not(.style-2) > .field:focus {
     box-shadow: 0 2px var(--color-blue);
+}
+
+.style-2 > .border-bottom:before, .style-2 > .border-bottom:after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: var(--color-blue);
+    position: absolute;
+    bottom: -2px;
+    transition: width .3s;
+}
+
+.style-2 > .border-bottom:before {
+    right: 50%;
+}
+
+.style-2 > .border-bottom:after {
+    left: 50%;
+}
+
+.style-2 > .field:focus ~ .border-bottom:before, .style-2 > .field:focus ~ .border-bottom:after {
+    width: 50%;
 }
 
 .label {
