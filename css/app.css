@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-:root {
-    --color-blue: #1a73e8;
-    --color-gray: #9e9e9e;
-}
-
 .form-login {
     max-width: 350px;
     margin: auto;
@@ -22,6 +17,11 @@
 
 .title {
     text-align: center;
+}
+
+:root {
+    --color-blue: #1a73e8;
+    --color-gray: #9e9e9e;
 }
 
 .container-input {
