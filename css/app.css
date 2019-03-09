@@ -41,6 +41,10 @@
     width: 100%;
 }
 
+.field:focus {
+    box-shadow: 0 2px var(--color-blue);
+}
+
 .label {
     position: absolute;
     left: 0;
@@ -58,8 +62,4 @@
 
 .field:focus ~ .label {
     color: var(--color-blue);
-}
-
-.field:focus {
-    box-shadow: 0 2px var(--color-blue);
 }
